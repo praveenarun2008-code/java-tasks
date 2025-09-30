@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Student Dashboard</title>
+	<link rel="stylesheet" href="task.css">
+</head>
+<body>
+	<h1>Student Dashboard :)</h1>
+	<div>
+		<button onclick="showTab('profile')">Profile</button>
+		<button onclick="showTab('age')">Age</button>
+		<button onclick="showTab('greeting')">Greeting</button>
+		<button onclick="showTab('calculator')">Calculator</button>
+		<button onclick="showTab('quotes')">Quotes</button>
+		<button onclick="showTab('json')">JSON</button>
+	</div>
+	<div id="profile" class="tab-content">
+		<h2>Profile</h2>
+		<form id="profileForm">
+			Name: <input type="text" id="name"><br>
+			Birth Year: <input type="number" id="birthYear"><br>
+			City: <input type="text" id="city"><br>
+			<button type="submit">Save</button>
+		</form>
+		<div id="profileResult"></div>
+	</div>
+	<div id="age" class="tab-content" style="display:none;">
+		<h2>How old am I?</h2>
+		<button onclick="checkAge()">Check</button>
+		<div id="ageResult"></div>
+	</div>
+	<div id="greeting" class="tab-content" style="display:none;">
+		<h2>Say Hi!</h2>
+		<button onclick="showGreeting()">Greet Me</button>
+		<div id="greetingResult"></div>
+	</div>
+	<div id="calculator" class="tab-content" style="display:none;">
+		<h2>Calculator</h2>
+		<form id="calcForm">
+			<input type="number" id="num1"> 
+			<select id="operation">
+				<option value="add">+</option>
+				<option value="sub">-</option>
+				<option value="mul">*</option>
+				<option value="div">/</option>
+			</select>
+			<input type="number" id="num2">
+			<button type="submit">Go</button>
+		</form>
+		<div id="calcResult"></div>
+	</div>
+	<div id="quotes" class="tab-content" style="display:none;">
+		<h2>Motivation</h2>
+		<button onclick="showQuote()">Show Quote</button>
+		<div id="quoteResult"></div>
+	</div>
+	<div id="json" class="tab-content" style="display:none;">
+		<h2>My Info (JSON)</h2>
+		<button onclick="showJSON()">Show</button>
+		<pre id="jsonResult"></pre>
+	</div>
+	<script src="task.js"></script>
+</body>
+</html>
