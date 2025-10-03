@@ -7,11 +7,11 @@ switch (true) {
             break   
         }
     case (mark >= 75 && mark < 90):
-        {
+        {   
             console.log("Grade B")  
             break  
         }
-    case (mark >= 50 && mark < 75):wsa
+    case (mark >= 50 && mark < 75):
         {
             console.log("Grade C")  
             break 

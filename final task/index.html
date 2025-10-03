@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Event Registration & Score Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Event Registration</h2>
+        <form id="regForm">
+            <label>Name: <input type="text" id="name" required></label>
+            <label>Email: <input type="email" id="email" required></label>
+            <label>Age: <input type="number" id="age" required></label>
+            <button type="submit">Register</button>
+            <div class="error" id="regError"></div>
+        </form>
+
+        <div id="quizSection" class="hidden">
+            <h2>Quiz</h2>
+            <form id="quizForm">
+                <div id="questions"></div>
+                <button type="submit">Submit Answers</button>
+            </form>
+            <div id="quizMsg"></div>
+        </div>
+
+        <div id="resultSection" class="hidden">
+            <h2>Result Summary</h2>
+            <div class="result" id="resultDisplay"></div>
+            <h3>JSON Output</h3>
+            <pre id="jsonDisplay"></pre>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

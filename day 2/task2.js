@@ -10,7 +10,7 @@ alert(" you are eligible to vote.");
 }
 
 if(confirm("Do you want to check again")){
-    location.reload()
+    
 }
 else
 {

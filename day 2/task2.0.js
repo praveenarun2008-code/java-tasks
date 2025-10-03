@@ -14,6 +14,9 @@ if (username === "library" && password === "book123") {
      case "3":
         alert("You selected History");
         break;
+        case"4":
+        alert("you  seleted xyz");
+        break;
     default:
         alert("Invalid category");
         break;

@@ -4,7 +4,7 @@
     );
     switch (q1) {
       case "2":
-        score++;
+        score++;//score=score+1
         break;
     }
     let q2 = prompt(
